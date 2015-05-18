@@ -1,0 +1,13 @@
+.front-pages-top
+  .contaier
+    %h1 ユーザー登録画面
+
+    = form_for @user, url: front_registrations_path, html: { class: 'form-inline' } do |f|
+      .form-group
+        = f.label :name
+        = f.text_field :name
+      .form-group
+        = f.label :password
+        = f.password_field :password
+      .form-group
+        = f.submit '送信'

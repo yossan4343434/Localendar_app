@@ -2,9 +2,9 @@
 %html
   %head
     %title I am front/layouts/base
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'front', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    // = render 'front/shared/head'
+    = csrf_meta_tag
   %body
     .front-layouts-base
       = yield
